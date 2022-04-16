@@ -22,7 +22,7 @@ const Shipment = () => {
         setAddress(event.target.value)
     }
 
-    const handleClickOnAdd = event => {
+    const handleClickOnAddShipment = event => {
         event.preventDefault();
         const shipping = [name,email,address,phone];
     }
@@ -32,7 +32,7 @@ const Shipment = () => {
         <div className='form-container'>
         <div>
             <h2 className='form-title'>Shipping Information</h2>
-            <form onSubmit={handleClickOnAdd} className='form-fields'>
+            <form onSubmit={handleClickOnAddShipment} className='form-fields'>
                 <div className="input-group">
                     <label htmlFor="name">Your Name</label>
                     <input onBlur={handleNameOnBlur} type="text" name="name" id="" required />
