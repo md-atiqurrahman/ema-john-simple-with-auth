@@ -31,7 +31,7 @@ const Shipment = () => {
     return (
         <div className='form-container'>
         <div>
-            <h2 className='form-title'>Shipping Information</h2>
+            <h2 className='form-title'> Your Shipping Info</h2>
             <form onSubmit={handleClickOnAddShipment} className='form-fields'>
                 <div className="input-group">
                     <label htmlFor="name">Your Name</label>
